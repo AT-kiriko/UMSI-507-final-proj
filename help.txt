@@ -1,0 +1,18 @@
+Commands:
+
+- [items|tags]
+    - Lists SCP items or attached tags, according to the specified parameters.
+
+Parameters:
+
+- [none|class=<object class name>|tag=<tag name>|index=<item index>], default=none
+    - Whether or not to specify a class name (e.g., keter), a tag name (e.g., alive) or an explicitly given SCP item index within which to limit the results.
+      Note that `tag` and `index` can be only used in `items` commands.
+- [rating|comments], default=ratings
+    - Whether to sort/aggregate by rating or the number of comments.
+- [top|bottom], default=top
+    - List results in descending (top) or ascending (bottom) order.
+- <integer>, default=10
+    - List <limit> matches.
+
+*Adding "barplot" to the end of your commands if you want to see barplot on the sort keyword (average rating or number of comments) of returned records.
